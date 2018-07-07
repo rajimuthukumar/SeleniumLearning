@@ -13,10 +13,13 @@ public class TestForm {
 	    Page funObj = new Page (base.driver);
 	    funObj.func1(); 
 	    ExcelFunc exeObj1 = new ExcelFunc (base.driver);
-	    
+	    CheckBoxDemo checkObj = new CheckBoxDemo(base.driver);
 	    Page2_Form exeObj = new Page2_Form (base.driver);
+	    
+	    
 	    exeObj1.readExcel(1);
 	    exeObj.func2();
+	    checkObj.BoxFunc();
 	    
 	}
 

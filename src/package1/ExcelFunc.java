@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ExcelFunc {
 	
-	static String cellvalue1,cellvalue2;
+	static String cellvalue1,cellvalue2,cellvalue3;
 
 	public ExcelFunc(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -25,8 +25,10 @@ public class ExcelFunc {
         XSSFRow sourceRow = sourceSheet.getRow(rownum);
         XSSFCell cell1=sourceRow.getCell(0);
         XSSFCell cell2=sourceRow.getCell(1);
+        XSSFCell cell3=sourceRow.getCell(2);
         cellvalue1 = cell1.toString();
         cellvalue2 = cell2.toString();
+        cellvalue3 = cell3.toString();
        
     }
 }
