@@ -15,11 +15,14 @@ public class TestForm {
 	    ExcelFunc exeObj1 = new ExcelFunc (base.driver);
 	    CheckBoxDemo checkObj = new CheckBoxDemo(base.driver);
 	    Page2_Form exeObj = new Page2_Form (base.driver);
-	    
+	    DropdownDemo dropObj = new  DropdownDemo(base.driver);
+	    FormDemo formObj = new FormDemo(base.driver);
 	    
 	    exeObj1.readExcel(1);
 	    exeObj.func2();
 	    checkObj.BoxFunc();
+	    dropObj.dropdown1();
+	    formObj.MethodForForm();
 	    
 	}
 
